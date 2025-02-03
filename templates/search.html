@@ -1,0 +1,10 @@
+<form method="POST">
+    Enter Registration Number: <input type="text" name="reg_number"><br>
+    <button type="submit">Search</button>
+</form>
+{% if contacts %}
+<p>Phone: {{ contacts.phone }}</p>
+<p>Email: {{ contacts.email }}</p>
+<p>Address: {{ contacts.address }}</p>
+{% endif %}
+
