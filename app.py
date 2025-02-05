@@ -5,13 +5,13 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import secrets
 
 app = Flask(__name__)
-app.secret_key = "your_secret_key"
+app.secret_key = "c5c0ea939cdd0d82c2b56a03f5ec7db0a2034b7fe2d75b80a1"
 
 # MongoDB Configuration
 app.config["MONGO_URI"] = "mongodb://localhost:27017/user_database"
 mongo = PyMongo(app)
 
-# Flask-Mail Configuration (use SMTP settings of your email provider)
+# Flask-Mail Configuration using smtp for email provider
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
